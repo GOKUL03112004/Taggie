@@ -24,7 +24,7 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"  // Example version, check for the latest
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
   },
   "scripts": {
     "start": "react-scripts start --host 0.0.0.0",
