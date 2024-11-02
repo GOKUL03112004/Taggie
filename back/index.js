@@ -52,6 +52,11 @@ app.use("/auth", authRoutes);
 app.use("/users", userRoutes);
 app.use("/posts", postRoutes);
 
+/* ADD ROOT ROUTE */
+app.get("/", (req, res) => {
+    res.send("Welcome to the API!"); // Change this to whatever you want to return
+});
+
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 3001;
 mongoose
@@ -63,7 +68,7 @@ mongoose
     app.listen(PORT, () => console.log(`Server Port: ${PORT}`));
 
     /* ADD DATA ONE TIME */
-    //User.insertMany(users);
-     //Post.insertMany(posts);
+    //User .insertMany(users);
+    //Post.insertMany(posts);
   })
   .catch((error) => console.log(`${error} did not connect`));
